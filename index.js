@@ -71,48 +71,48 @@ function getGit(answers) {
 
 function generateReadMe(answers) {
     return `
-                 # ${answers.project}
+# ${answers.project}
                           
-                          ## Description
+## Description
                           
-                          ${answers.desc}
+${answers.desc}
                           
-                          ## Table of Contents
+## Table of Contents
                           
-                          * [Installation](#installation)
-                          * [Usage](#usage)
-                          * [License](#license)
-                          * [Contributing](#contributing)
-                          * [Tests](#tests)
-                          * [Questions](#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
                           
-                          ## Installation
+## Installation
                           
-                          To install necassary dependencies, run the following command:
+To install necassary dependencies, run the following command:
                           
-                          ${answers.install}
+${answers.install}
                           
-                          ## Usage
+## Usage
                           
-                          ${answers.needToKnow}
+${answers.needToKnow}
                           
-                          ## Contributing
+## Contributing
                           
-                          ${answers.contribute}
+${answers.contribute}
                           
-                          ## Tests 
+## Tests 
                           
-                          To run test, run the following command:
+To run test, run the following command:
                           
-                          ${answers.tests}
+${answers.tests}
                           
-                          ## Questions
+## Questions
                           
-                          ![GitHub Avatar](${avatar})
+![GitHub Avatar](${avatar})
             
-            If you have any questions about the repo, open an issue or contact ${githubUrl} directly
+If you have any questions about the repo, open an issue or contact ${githubUrl} directly
             
-                          `;
+`;
 }
 
 
