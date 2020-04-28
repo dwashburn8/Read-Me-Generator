@@ -1,43 +1,42 @@
-
-                 # I wanna sleep
+# I wanna sleep
                           
-                          ## Description
+# Description
                           
-                          Honestly dont know
+Honestly dont know
                           
-                          ## Table of Contents
+## Table of Contents
                           
-                          * [Installation](#installation)
-                          * [Usage](#usage)
-                          * [License](#license)
-                          * [Contributing](#contributing)
-                          * [Tests](#tests)
-                          * [Questions](#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
                           
-                          ## Installation
+## Installation
                           
-                          To install necassary dependencies, run the following command:
+To install necassary dependencies, run the following command:
                           
-                          no idea
+no idea
                           
-                          ## Usage
+## Usage
                           
-                          her
+her
                           
-                          ## Contributing
+## Contributing
                           
-                          grrr
+grrr
+                        
+## Tests 
                           
-                          ## Tests 
+To run test, run the following command:
                           
-                          To run test, run the following command:
+tests
                           
-                          tests
+## Questions
                           
-                          ## Questions
-                          
-                          ![GitHub Avatar]()
+![GitHub Avatar]()
             
-            If you have any questions about the repo, open an issue or contact  directly
+If you have any questions about the repo, open an issue or contact  directly
             
                           
