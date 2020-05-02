@@ -40,5 +40,5 @@ npm run tests
                           
 ![GitHub Avatar](https://avatars0.githubusercontent.com/u/58758770?v=4)
             
-If you have any questions about the repo, open an issue or contact ---Email is unavailable--- directly
+If you have any questions about the repo, open an issue or contact soldbydw@gmail.com directly
             
