@@ -1,11 +1,11 @@
 
-![Badge](https://img.shields.io/badge/license-GPL-brightgreen.svg)
+![Badge](https://img.shields.io/badge/license-MIT-brightgreen.svg)
 
-# b
+# Read Me Generator
                           
 ## Description
                           
-b
+I have created a read me generator using Node.js Please run the program, answer the questions and see your new README.md file
                           
 ## Table of Contents
                           
@@ -20,21 +20,21 @@ b
                           
 To install necassary dependencies, run the following command:
                           
-bb
+npm install
                           
 ## Usage
                           
-b
+Make sure to install the dependencies
                           
 ## Contributing
                           
-b
+Please give credit 
                           
 ## Tests 
                           
 To run test, run the following command:
                           
-b
+npm run tests
                           
 ## Questions
                           
