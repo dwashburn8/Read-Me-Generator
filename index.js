@@ -11,20 +11,27 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 function getGit(answers) {
     const queryUrl = `https://api.github.com/users/${answers.username}`;
-
     return axios.get(queryUrl)
         .then((response) => {
-            return {...answers,avatar: response.data.avatar_url, githubUrl: response.data.url
+            return {...answers,avatar: response.data.avatar_url, githubUrl: response.data.email
  
             }
             // avatar = response.data.avatar_url;
             // githubUrl = response.data.url;
-            // console.log(avatar);
+            // console.log(response.data);
             // console.log(githubUrl);
-
-
         })
+        
 }
+
+function checkEmail(){
+    if(!githubUrl){
+        return "---Email is unavailable---"
+    } else {
+        return githubUrl
+    }
+}
+
 
 function promptUser() {
     return inquirer
@@ -119,7 +126,7 @@ ${answers.tests}
                           
 ![GitHub Avatar](${answers.avatar})
             
-If you have any questions about the repo, open an issue or contact ${answers.githubUrl} directly
+If you have any questions about the repo, open an issue or contact ${checkEmail()} directly
             
 `;
 }
@@ -128,7 +135,6 @@ If you have any questions about the repo, open an issue or contact ${answers.git
 promptUser()
     .then((answers) => {
         return getGit(answers);
-
 
     })
     .then((answers) => {

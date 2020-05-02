@@ -1,11 +1,11 @@
 
-![Badge](https://img.shields.io/badge/license-MIT-brightgreen.svg)
+![Badge](https://img.shields.io/badge/license-GPL-brightgreen.svg)
 
-# Read Me Generator
+# b
                           
 ## Description
                           
-I used Node.js to create a program that helps users write their read me section
+b
                           
 ## Table of Contents
                           
@@ -20,25 +20,25 @@ I used Node.js to create a program that helps users write their read me section
                           
 To install necassary dependencies, run the following command:
                           
-npm install
+bb
                           
 ## Usage
                           
-Please give credit where credit is due
+b
                           
 ## Contributing
                           
-Please do with discression
+b
                           
 ## Tests 
                           
 To run test, run the following command:
                           
-npm run test
+b
                           
 ## Questions
                           
 ![GitHub Avatar](https://avatars0.githubusercontent.com/u/58758770?v=4)
             
-If you have any questions about the repo, open an issue or contact https://api.github.com/users/dwashburn8 directly
+If you have any questions about the repo, open an issue or contact ---Email is unavailable--- directly
             
