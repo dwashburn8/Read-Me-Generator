@@ -1,8 +1,11 @@
-# I wanna sleep
+
+![Badge](https://img.shields.io/badge/license-MIT-brightgreen.svg)
+
+# Read Me Generator
                           
-# Description
+## Description
                           
-Honestly dont know
+I used Node.js to create a program that helps users write their read me section
                           
 ## Table of Contents
                           
@@ -17,26 +20,25 @@ Honestly dont know
                           
 To install necassary dependencies, run the following command:
                           
-no idea
+npm install
                           
 ## Usage
                           
-her
+Please give credit where credit is due
                           
 ## Contributing
                           
-grrr
-                        
+Please do with discression
+                          
 ## Tests 
                           
 To run test, run the following command:
                           
-tests
+npm run test
                           
 ## Questions
                           
-![GitHub Avatar]()
+![GitHub Avatar](https://avatars0.githubusercontent.com/u/58758770?v=4)
             
-If you have any questions about the repo, open an issue or contact  directly
+If you have any questions about the repo, open an issue or contact https://api.github.com/users/dwashburn8 directly
             
-                          

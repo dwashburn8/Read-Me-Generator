@@ -7,6 +7,25 @@ let githubUrl = ""
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
+
+
+function getGit(answers) {
+    const queryUrl = `https://api.github.com/users/${answers.username}`;
+
+    return axios.get(queryUrl)
+        .then((response) => {
+            return {...answers,avatar: response.data.avatar_url, githubUrl: response.data.url
+ 
+            }
+            // avatar = response.data.avatar_url;
+            // githubUrl = response.data.url;
+            // console.log(avatar);
+            // console.log(githubUrl);
+
+
+        })
+}
+
 function promptUser() {
     return inquirer
         .prompt([
@@ -26,9 +45,10 @@ function promptUser() {
                 message: "Please wright a short description of your project"
             },
             {
-                type: "input",
+                type: "list",
                 name: "license",
-                message: "What kind of license should your project have?"
+                message: "What kind of license should your project have?",
+                choices: ["GPL", "MIT", "Apache", "BSD"]
             },
             {
                 type: "input",
@@ -51,26 +71,15 @@ function promptUser() {
                 message: "What does the user need to know about contributing to the repo?"
             }
         ])
-}
 
-function getGit(answers) {
-    const queryUrl = `https://api.github.com/users/${answers.username}`;
 
-    return axios.get(queryUrl)
-        .then((response) => {
-            //   console.log(response);
-            let avatar = response.data.avatar_url;
-            let githubUrl = response.data.url
-            console.log(avatar);
-            console.log(githubUrl);
-            
-            
-        })
 }
 
 
 function generateReadMe(answers) {
     return `
+![Badge](https://img.shields.io/badge/license-${answers.license}-brightgreen.svg)
+
 # ${answers.project}
                           
 ## Description
@@ -108,22 +117,23 @@ ${answers.tests}
                           
 ## Questions
                           
-![GitHub Avatar](${avatar})
+![GitHub Avatar](${answers.avatar})
             
-If you have any questions about the repo, open an issue or contact ${githubUrl} directly
+If you have any questions about the repo, open an issue or contact ${answers.githubUrl} directly
             
 `;
 }
 
 
 promptUser()
-    // .then((answers) => {
-    //     return getGit(answers);
-        
-    // })
+    .then((answers) => {
+        return getGit(answers);
+
+
+    })
     .then((answers) => {
         const md = generateReadMe(answers);
-       return writeFileAsync("READme.md", md)
+        return writeFileAsync("READme.md", md)
 
     })
     .then(() => {
